@@ -230,19 +230,21 @@
     font-size:12.5px;line-height:1.35;font-weight:600;color:var(--ink);
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em;
   }
-  .price-row{display:flex;align-items:baseline;gap:6px;margin-top:auto;}
-  .price{font-family:'Lora', serif;font-style:italic;font-weight:600;font-size:18px;color:var(--oxblood);}
+  .price-row{display:flex;align-items:baseline;gap:7px;margin-top:1px;}
+  .price{font-family:'Lora', serif;font-style:italic;font-weight:600;font-size:18px;color:#6f604b;}
   .price small{font-size:11px;}
+  .price-note{font-size:9px;letter-spacing:0.03em;color:#8a8175;}
   .old-price{font-size:11px;color:#9a9186;text-decoration:line-through;}
   .cta{
     margin-top:8px;text-align:center;
-    background:var(--oxblood);color:var(--paper);
-    font-size:12px;font-weight:700;letter-spacing:0.03em;
+    background:#b8aa92;color:#2f2b24;
+    border:1px solid rgba(38,36,29,0.12);
+    font-size:11.5px;font-weight:600;letter-spacing:0.05em;
     padding:10px 0;text-transform:uppercase;
     border-radius:999px;
   }
   .card a.cta-link{display:block;margin-top:auto;}
-  .card a.cta-link:active .cta{background:#8fa19c;}
+  .card a.cta-link:active .cta{background:#a6977e;}
 
   .empty{grid-column:1/-1;text-align:center;padding:40px 10px;color:#8a8378;font-size:13.5px;}
 
@@ -309,7 +311,7 @@
     <a href="#" aria-label="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="#f4eee0"><path d="M16.6 5.82c-1.02-.9-1.64-2.15-1.72-3.53H12.2v14.3a2.87 2.87 0 1 1-2.03-2.75v-2.66a5.53 5.53 0 1 0 4.75 5.48V9.3a7.4 7.4 0 0 0 4.36 1.4V8a4.85 4.85 0 0 1-2.68-2.18z"/></svg></a>
     <a href="#" aria-label="Pinterest"><svg width="15" height="15" viewBox="0 0 24 24" fill="#f4eee0"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.63 7.86 6.35 9.33-.09-.79-.16-2.01.03-2.88.18-.79 1.17-5.03 1.17-5.03s-.3-.6-.3-1.48c0-1.39.8-2.42 1.81-2.42.85 0 1.26.64 1.26 1.41 0 .86-.55 2.14-.83 3.33-.24 1 .5 1.81 1.48 1.81 1.78 0 3.15-1.88 3.15-4.58 0-2.39-1.72-4.07-4.18-4.07-2.85 0-4.52 2.14-4.52 4.35 0 .86.33 1.79.75 2.29a.3.3 0 0 1 .07.29c-.08.32-.25 1-.29 1.14-.04.19-.15.23-.35.14-1.31-.61-2.13-2.52-2.13-4.06 0-3.31 2.4-6.35 6.93-6.35 3.64 0 6.47 2.59 6.47 6.06 0 3.61-2.28 6.52-5.44 6.52-1.06 0-2.06-.55-2.4-1.21l-.65 2.49c-.24.91-.87 2.05-1.3 2.75.98.3 2.02.47 3.1.47 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
   </div>
-  <p>Alguns links são de afiliada — sem custo extra pra você, ajuda a manter a curadoria no ar. 🤍</p>
+  <p>Os preços podem mudar na Amazon. Alguns links são de afiliada — sem custo extra pra você, ajudam a manter a curadoria no ar. 🤍</p>
 </footer>
 
 <script>
@@ -348,127 +350,148 @@ const PRODUCTS = [
     "title": "Quadros decorativos com pássaros",
     "img": "assets/produtos/product-01-quadros-passaros.webp",
     "category": "Decoração",
-    "link": "https://link.amazon/B0ek2ahoX"
+    "link": "https://link.amazon/B0ek2ahoX",
+    "price": "R$ 235,00"
   },
   {
     "title": "Pote de cerâmica com estampa de limão",
     "img": "assets/produtos/product-02-pote-limao.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B00Te9yeU"
+    "link": "https://link.amazon/B00Te9yeU",
+    "price": "R$ 179,38"
   },
   {
     "title": "Conjunto de potes florais com bandeja de rattan",
     "img": "assets/produtos/product-03-potes-florais-azuis.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0eUlLFhJ"
+    "link": "https://link.amazon/B0eUlLFhJ",
+    "price": "R$ 260,42"
   },
   {
     "title": "Jogo de pratos azul, branco e dourado",
     "img": "assets/produtos/product-04-pratos-azul-dourado.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0h2z6zW5"
+    "link": "https://link.amazon/B0h2z6zW5",
+    "price": "R$ 168,99"
   },
   {
     "title": "Trio de potes de cerâmica azul e branco",
     "img": "assets/produtos/product-05-potes-azul-branco.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0gLvunIc"
+    "link": "https://link.amazon/B0gLvunIc",
+    "price": "R$ 307,83"
   },
   {
     "title": "Conjunto de potes para temperos com bandeja",
     "img": "assets/produtos/product-06-potes-flores-laranja.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0b7r6zr5"
+    "link": "https://link.amazon/B0b7r6zr5",
+    "price": "R$ 307,96"
   },
   {
     "title": "Conjunto floral de potes em cerâmica",
     "img": "assets/produtos/product-07-conjunto-floral.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B02RwzOkX"
+    "link": "https://link.amazon/B02RwzOkX",
+    "price": "R$ 464,04"
   },
   {
     "title": "Conjunto de pratos azuis e brancos",
     "img": "assets/produtos/product-08-conjunto-pratos-azuis.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B04ajSbEm"
+    "link": "https://link.amazon/B04ajSbEm",
+    "price": "R$ 303,99"
   },
   {
     "title": "Abajur floral com base de madeira",
     "img": "assets/produtos/product-09-abajur-floral.webp",
     "category": "Iluminação",
-    "link": "https://link.amazon/B0itsRqj2"
+    "link": "https://link.amazon/B0itsRqj2",
+    "price": "R$ 264,99"
   },
   {
     "title": "Câmera instantânea Instax Mini 12 lilás",
     "img": "assets/produtos/product-10-camera-instax.webp",
     "category": "Decoração",
-    "link": "https://link.amazon/B09zBJu24"
+    "link": "https://link.amazon/B09zBJu24",
+    "price": "R$ 515,00"
   },
   {
     "title": "Conjunto de pratos com estampa de limões",
     "img": "assets/produtos/product-11-pratos-limao.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B020coJCw"
+    "link": "https://link.amazon/B020coJCw",
+    "price": "R$ 183,68"
   },
   {
     "title": "Prato decorativo azul e branco",
     "img": "assets/produtos/product-12-prato-radial.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B03RHuRyO"
+    "link": "https://link.amazon/B03RHuRyO",
+    "price": "R$ 52,99"
   },
   {
     "title": "Prato de cerâmica com detalhes azuis",
     "img": "assets/produtos/product-13-prato-floral-azul.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0bXjM5fR"
+    "link": "https://link.amazon/B0bXjM5fR",
+    "price": "R$ 213,49"
   },
   {
     "title": "Tigela de cerâmica em formato de mamão",
     "img": "assets/produtos/product-14-tigela-mamao.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0ffyYTq4"
+    "link": "https://link.amazon/B0ffyYTq4",
+    "price": "R$ 97,99"
   },
   {
     "title": "Prato decorativo Sardines Mare",
     "img": "assets/produtos/product-15-prato-sardinhas.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0hDe5NiT"
+    "link": "https://link.amazon/B0hDe5NiT",
+    "price": "R$ 199,00"
   },
   {
     "title": "Prato decorativo com caranguejo",
     "img": "assets/produtos/product-16-prato-caranguejo.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0b5rPsec"
+    "link": "https://link.amazon/B0b5rPsec",
+    "price": "R$ 213,49"
   },
   {
     "title": "Trio de vasos cerâmicos azul e branco",
     "img": "assets/produtos/product-17-vasos-jardim.webp",
     "category": "Decoração",
-    "link": "https://link.amazon/B04Z6fAG8"
+    "link": "https://link.amazon/B04Z6fAG8",
+    "price": "R$ 329,99"
   },
   {
     "title": "Creme hidratante NIVEA",
     "img": "assets/produtos/product-18-creme-nivea.webp",
     "category": "Banho",
-    "link": "https://link.amazon/B06ZvPDCk"
+    "link": "https://link.amazon/B06ZvPDCk",
+    "price": "R$ 20,99"
   },
   {
     "title": "Pote de vidro com detalhes de abelhas",
     "img": "assets/produtos/product-19-pote-abelhas.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0dMGyQ9o"
+    "link": "https://link.amazon/B0dMGyQ9o",
+    "price": "R$ 47,00"
   },
   {
     "title": "Hidratante Granado Chá Branco",
     "img": "assets/produtos/product-20-granado.webp",
     "category": "Banho",
-    "link": "https://link.amazon/B00mQm5vl"
+    "link": "https://link.amazon/B00mQm5vl",
+    "price": "R$ 39,95"
   },
   {
     "title": "Tigela de vidro em formato de folhas",
     "img": "assets/produtos/product-21-tigela-folhas.webp",
     "category": "Cozinha",
-    "link": "https://link.amazon/B0a2oZRCg"
+    "link": "https://link.amazon/B0a2oZRCg",
+    "price": "R$ 146,80"
   }
 ];
 
@@ -518,6 +541,10 @@ function renderGrid(){
       </div>
       <div class="card-body">
         <div class="card-title">${p.title}</div>
+        <div class="price-row">
+          <span class="price">${p.price}</span>
+          <span class="price-note">na Amazon</span>
+        </div>
         <a class="cta-link" href="${p.link}" target="_blank" rel="noopener sponsored">
           <div class="cta">Ver oferta</div>
         </a>
